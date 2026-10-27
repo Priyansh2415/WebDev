@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Student Hub Portal - Contact</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ==========================
+Notification Banner
+========================== -->
+
+<div class="notification" id="notification">
+
+<div>
+
+📞 Need Help? Contact the Student Hub Support Team.
+
+</div>
+
+<button onclick="closeBanner()">
+
+X
+
+</button>
+
+</div>
+
+<!-- ==========================
+Header
+========================== -->
+
+<header>
+
+<h1>
+
+📞 Contact Us
+
+</h1>
+
+<p>
+
+We're Always Ready To Help You
+
+</p>
+
+</header>
+
+<!-- ==========================
+Navigation
+========================== -->
+
+<nav>
+
+<div class="menu-btn"
+onclick="toggleMenu()">
+
+☰
+
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="register.html">Register</a>
+
+<a href="login.html">Login</a>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="events.html">Events</a>
+
+<a href="profile.html">Profile</a>
+
+<a href="contact.html">Contact</a>
+
+<a href="admin.html">Admin</a>
+
+<a href="faq.html">FAQ</a>
+
+<a href="feedback.html">Feedback</a>
+
+</div>
+
+</nav>
+
+<!-- ==========================
+Container
+========================== -->
+
+<div class="container">
+
+<div class="card">
+
+<h2>
+
+📨 Contact Form
+
+</h2>
+
+<form id="contactForm">
+
+<input
+type="text"
+placeholder="Enter Your Name"
+required>
+
+<input
+type="email"
+placeholder="Enter Email Address"
+required>
+
+<input
+type="text"
+placeholder="Subject"
+required>
+
+<textarea
+placeholder="Write Your Message"
+rows="6"
+required>
+
+</textarea>
+
+<button
+type="submit">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+<!-- ==========================
+Contact Information
+========================== -->
+
+<div class="card">
+
+<h2>
+
+📍 Contact Information
+
+</h2>
+
+<p>
+
+<strong>Address:</strong><br>
+
+Student Hub Portal<br>
+
+CSPIT College Campus,<br>
+
+Anand, Gujarat, India
+
+</p>
+
+<br>
+
+<p>
+
+📧 support@studenthub.com
+
+</p>
+
+<br>
+
+<p>
+
+📞 +91 9876543210
+
+</p>
+
+<br>
+
+<p>
+
+🌐 www.studenthubportal.com
+
+</p>
+
+</div>
+
+<!-- ==========================
+Google Map
+========================== -->
+
+<div class="card">
+
+<h2>
+
+🗺 Our Location
+
+</h2>
+
+<iframe
+
+src="https://www.google.com/maps?q=Anand,Gujarat&output=embed"
+
+width="100%"
+
+height="350"
+
+style="border:0;border-radius:15px;"
+
+loading="lazy">
+
+</iframe>
+
+</div>
+<!-- ==========================
+End Container
+========================== -->
+
+</div>
+
+<!-- ==========================
+Modal Popup
+========================== -->
+
+<div class="modal" id="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">
+
+            &times;
+
+        </span>
+
+        <h2>
+
+            📩 Message Sent
+
+        </h2>
+
+        <p id="modalText">
+
+            Thank you for contacting Student Hub Portal.
+            Our support team will contact you soon.
+
+        </p>
+
+        <br>
+
+        <button onclick="closeModal()">
+
+            Close
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+Theme Switch Button
+========================== -->
+
+<button
+class="theme-btn"
+id="themeBtn">
+
+🌙
+
+</button>
+
+<!-- ==========================
+Scroll To Top Button
+========================== -->
+
+<button
+id="topBtn"
+onclick="scrollTopPage()"
+style="
+display:none;
+position:fixed;
+right:90px;
+bottom:20px;
+width:55px;
+height:55px;
+border-radius:50%;
+background:#005bea;
+color:white;
+font-size:22px;
+border:none;
+cursor:pointer;
+z-index:999;
+">
+
+⬆
+
+</button>
+
+<!-- ==========================
+Footer
+========================== -->
+
+<footer>
+
+<p>
+
+© 2026 Student Hub Portal | All Rights Reserved
+
+</p>
+
+</footer>
+
+<!-- ==========================
+JavaScript
+========================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

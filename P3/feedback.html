@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Student Hub Portal - Feedback</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ==========================
+Notification Banner
+========================== -->
+
+<div class="notification" id="notification">
+
+<div>
+
+⭐ We value your feedback! Share your experience with Student Hub Portal.
+
+</div>
+
+<button onclick="closeBanner()">
+
+X
+
+</button>
+
+</div>
+
+<!-- ==========================
+Header
+========================== -->
+
+<header>
+
+<h1>
+
+📝 Feedback
+
+</h1>
+
+<p>
+
+Help Us Improve Student Hub Portal
+
+</p>
+
+</header>
+
+<!-- ==========================
+Navigation
+========================== -->
+
+<nav>
+
+<div class="menu-btn"
+onclick="toggleMenu()">
+
+☰
+
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="register.html">Register</a>
+
+<a href="login.html">Login</a>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="events.html">Events</a>
+
+<a href="profile.html">Profile</a>
+
+<a href="contact.html">Contact</a>
+
+<a href="admin.html">Admin</a>
+
+<a href="faq.html">FAQ</a>
+
+<a href="feedback.html">Feedback</a>
+
+</div>
+
+</nav>
+
+<!-- ==========================
+Container
+========================== -->
+
+<div class="container">
+
+<div class="card">
+
+<h2>
+
+Share Your Feedback
+
+</h2>
+
+<form id="feedbackForm">
+
+<input
+type="text"
+placeholder="Enter Your Name"
+required>
+
+<input
+type="email"
+placeholder="Enter Your Email"
+required>
+
+<!-- Rating -->
+
+<label>
+
+<strong>Rate Our Portal</strong>
+
+</label>
+
+<div
+style="
+font-size:30px;
+margin:15px 0;
+color:gold;
+">
+
+★★★★★
+
+</div>
+
+<select required>
+
+<option value="">
+
+Select Rating
+
+</option>
+
+<option>
+
+⭐⭐⭐⭐⭐ Excellent
+
+</option>
+
+<option>
+
+⭐⭐⭐⭐ Very Good
+
+</option>
+
+<option>
+
+⭐⭐⭐ Good
+
+</option>
+
+<option>
+
+⭐⭐ Average
+
+</option>
+
+<option>
+
+⭐ Poor
+
+</option>
+
+</select>
+
+<textarea
+
+rows="6"
+
+placeholder="Write Your Feedback Here..."
+
+required>
+
+</textarea>
+
+<button
+type="submit">
+
+Submit Feedback
+
+</button>
+
+</form>
+
+</div>
+
+<!-- ==========================
+Feedback Tips
+========================== -->
+
+<div class="card">
+
+<h2>
+
+💡 Tips For Useful Feedback
+
+</h2>
+
+<ul>
+
+<li>✔ Share your overall experience.</li>
+
+<li>✔ Mention any issues you faced.</li>
+
+<li>✔ Suggest improvements.</li>
+
+<li>✔ Rate our services honestly.</li>
+
+<li>✔ Help us improve the portal.</li>
+
+</ul>
+
+</div>
+<!-- ==========================
+End Container
+========================== -->
+
+</div>
+
+<!-- ==========================
+Feedback Modal
+========================== -->
+
+<div class="modal" id="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">
+
+            &times;
+
+        </span>
+
+        <h2>
+
+            ❤️ Thank You!
+
+        </h2>
+
+        <p id="modalText">
+
+            Your feedback has been submitted successfully.
+            Thank you for helping us improve Student Hub Portal.
+
+        </p>
+
+        <br>
+
+        <button onclick="closeModal()">
+
+            Close
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+Theme Switch Button
+========================== -->
+
+<button
+class="theme-btn"
+id="themeBtn">
+
+🌙
+
+</button>
+
+<!-- ==========================
+Scroll To Top Button
+========================== -->
+
+<button
+id="topBtn"
+onclick="scrollTopPage()"
+style="
+display:none;
+position:fixed;
+right:90px;
+bottom:20px;
+width:55px;
+height:55px;
+border-radius:50%;
+background:#005bea;
+color:white;
+font-size:22px;
+border:none;
+cursor:pointer;
+z-index:999;
+">
+
+⬆
+
+</button>
+
+<!-- ==========================
+Footer
+========================== -->
+
+<footer>
+
+<p>
+
+© 2026 Student Hub Portal | All Rights Reserved
+
+</p>
+
+</footer>
+
+<!-- ==========================
+JavaScript
+========================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

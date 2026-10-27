@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Hub Portal - Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ==========================
+Notification Banner
+========================== -->
+
+<div class="notification" id="notification">
+
+<div>
+
+🎉 Welcome Back! Your Dashboard has been updated successfully.
+
+</div>
+
+<button onclick="closeBanner()">
+
+X
+
+</button>
+
+</div>
+
+<!-- ==========================
+Header
+========================== -->
+
+<header>
+
+<h1>
+
+📊 Student Dashboard
+
+</h1>
+
+<p>
+
+Manage Your Academic Activities
+
+</p>
+
+</header>
+
+<!-- ==========================
+Navigation
+========================== -->
+
+<nav>
+
+<div class="menu-btn" onclick="toggleMenu()">
+
+☰
+
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="register.html">Register</a>
+
+<a href="login.html">Login</a>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="events.html">Events</a>
+
+<a href="profile.html">Profile</a>
+
+<a href="contact.html">Contact</a>
+
+<a href="admin.html">Admin</a>
+
+<a href="faq.html">FAQ</a>
+
+<a href="feedback.html">Feedback</a>
+
+</div>
+
+</nav>
+
+<!-- ==========================
+Container
+========================== -->
+
+<div class="container">
+
+<!-- Student Profile -->
+
+<div class="card">
+
+<h2>👋 Welcome Student</h2>
+
+<p><strong>Name :</strong> Priyansh Shah</p>
+
+<p><strong>Student ID :</strong> 25CS101</p>
+
+<p><strong>Course :</strong> Bachelor of Technology</p>
+
+<p><strong>Email :</strong> student@example.com</p>
+
+<button onclick="openModal('Student Profile Loaded Successfully.')">
+
+View Profile
+
+</button>
+
+</div>
+
+<!-- Dashboard Cards -->
+
+<div class="dashboard">
+
+<div class="box">
+
+<h2>📚 Courses</h2>
+
+<p>6 Subjects</p>
+
+</div>
+
+<div class="box">
+
+<h2>📅 Attendance</h2>
+
+<p>92%</p>
+
+</div>
+
+<div class="box">
+
+<h2>🏆 Result</h2>
+
+<p>CGPA 8.5</p>
+
+</div>
+
+<div class="box">
+
+<h2>🎉 Events</h2>
+
+<p>3 Upcoming</p>
+
+</div>
+
+</div>
+
+<!-- Academic Details -->
+
+<div class="card">
+
+<h2>Academic Performance</h2>
+
+<table>
+
+<tr>
+
+<th>Subject</th>
+
+<th>Marks</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>Web Development</td>
+
+<td>85</td>
+
+<td>Pass</td>
+
+</tr>
+
+<tr>
+
+<td>Database Management</td>
+
+<td>90</td>
+
+<td>Pass</td>
+
+</tr>
+
+<tr>
+
+<td>Programming</td>
+
+<td>88</td>
+
+<td>Pass</td>
+
+</tr>
+
+<tr>
+
+<td>Computer Networks</td>
+
+<td>91</td>
+
+<td>Pass</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<!-- Quick Actions -->
+
+<div class="card">
+
+<h2>Quick Actions</h2>
+
+<button onclick="openModal('Attendance Report Generated Successfully!')">
+
+Attendance Report
+
+</button>
+
+<button onclick="openModal('Result Download Started!')">
+
+Download Result
+
+</button>
+
+<button onclick="openModal('Event Registration Opened!')">
+
+Register Event
+
+</button>
+
+<button onclick="openModal('Profile Updated Successfully!')">
+
+Update Profile
+
+</button>
+
+</div>
+<!-- ==========================
+End Container
+========================== -->
+
+</div>
+
+<!-- ==========================
+Modal Popup
+========================== -->
+
+<div class="modal" id="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">
+
+            &times;
+
+        </span>
+
+        <h2>
+
+            📢 Student Hub Portal
+
+        </h2>
+
+        <p id="modalText">
+
+            Welcome to your dashboard.
+
+        </p>
+
+        <br>
+
+        <button onclick="closeModal()">
+
+            Close
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+Theme Switch Button
+========================== -->
+
+<button
+class="theme-btn"
+id="themeBtn">
+
+🌙
+
+</button>
+
+<!-- ==========================
+Scroll To Top Button
+========================== -->
+
+<button
+id="topBtn"
+onclick="scrollTopPage()"
+style="
+display:none;
+position:fixed;
+right:90px;
+bottom:20px;
+width:55px;
+height:55px;
+border-radius:50%;
+background:#005bea;
+color:white;
+font-size:22px;
+border:none;
+cursor:pointer;
+z-index:999;
+">
+
+⬆
+
+</button>
+
+<!-- ==========================
+Footer
+========================== -->
+
+<footer>
+
+<p>
+
+© 2026 Student Hub Portal | All Rights Reserved
+
+</p>
+
+</footer>
+
+<!-- ==========================
+JavaScript
+========================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Hub Portal - Home</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ==========================
+Notification Banner
+=========================== -->
+
+<div class="notification" id="notification">
+
+<div>
+🎉 Welcome to Student Hub Portal! Admissions are now open.
+</div>
+
+<button onclick="closeBanner()">X</button>
+
+</div>
+
+<!-- ==========================
+Header
+=========================== -->
+
+<header>
+
+<h1>🎓 Student Hub Portal</h1>
+
+<p>Your Complete Student Management System</p>
+
+</header>
+
+<!-- ==========================
+Navigation
+=========================== -->
+
+<nav>
+
+<div class="menu-btn" onclick="toggleMenu()">
+☰
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="register.html">Register</a>
+
+<a href="login.html">Login</a>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="events.html">Events</a>
+
+<a href="profile.html">Profile</a>
+
+<a href="contact.html">Contact</a>
+
+<a href="admin.html">Admin</a>
+
+<a href="faq.html">FAQ</a>
+
+<a href="feedback.html">Feedback</a>
+
+</div>
+
+</nav>
+
+<!-- ==========================
+Container
+=========================== -->
+
+<div class="container">
+
+<!-- ==========================
+Image Slider
+=========================== -->
+
+<div class="slider">
+
+<div class="slide active-slide">
+
+<img src="https://picsum.photos/1200/450?random=1" alt="Campus">
+
+</div>
+
+<div class="slide">
+
+<img src="https://picsum.photos/1200/450?random=2" alt="Library">
+
+</div>
+
+<div class="slide">
+
+<img src="https://picsum.photos/1200/450?random=3" alt="Students">
+
+</div>
+
+<span class="prev" onclick="prevSlide()">❮</span>
+
+<span class="next" onclick="nextSlide()">❯</span>
+
+</div>
+
+<div class="card">
+
+<h2>Welcome To Student Hub Portal</h2>
+
+<p>
+
+Student Hub Portal is a smart online platform designed for students to manage registration, login, profile, events, academic information, and communication with administration from one place.
+
+</p>
+
+<br>
+
+<button onclick="openModal('Welcome to Student Hub Portal!')">
+
+Learn More
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Our Features</h2>
+
+<ul>
+
+<li>✔ Online Registration</li>
+
+<li>✔ Secure Login</li>
+
+<li>✔ Student Dashboard</li>
+
+<li>✔ Event Management</li>
+
+<li>✔ Student Profile</li>
+
+<li>✔ Admin Panel</li>
+
+<li>✔ Contact Support</li>
+
+<li>✔ Feedback System</li>
+
+</ul>
+
+</div>
+<!-- ==========================
+Modal Popup
+========================== -->
+
+<div class="modal" id="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2>Student Hub Portal</h2>
+
+        <p id="modalText">
+            Welcome to Student Hub Portal.
+        </p>
+
+        <br>
+
+        <button onclick="closeModal()">
+            Close
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+Theme Button
+========================== -->
+
+<button class="theme-btn" id="themeBtn">
+    🌙
+</button>
+
+<!-- ==========================
+Scroll To Top
+========================== -->
+
+<button
+id="topBtn"
+onclick="scrollTopPage()"
+style="
+display:none;
+position:fixed;
+right:90px;
+bottom:20px;
+width:55px;
+height:55px;
+border-radius:50%;
+font-size:22px;
+z-index:999;
+background:#005bea;
+color:white;
+border:none;
+cursor:pointer;
+">
+⬆
+</button>
+
+<!-- ==========================
+Footer
+========================== -->
+
+<footer>
+
+<p>
+© 2026 Student Hub Portal | All Rights Reserved
+</p>
+
+</footer>
+
+<!-- ==========================
+JavaScript
+========================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
