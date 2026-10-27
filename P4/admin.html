@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Hub Portal - Admin</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="notification" id="notification">
+
+<div>
+
+👨‍💼 Administrator Panel Loaded Successfully.
+
+</div>
+
+<button onclick="closeBanner()">X</button>
+
+</div>
+
+<header>
+
+<h1>👨‍💼 Admin Panel</h1>
+
+<p>Manage Student Records</p>
+
+</header>
+
+<nav>
+
+<div class="menu-btn" onclick="toggleMenu()">
+
+☰
+
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="register.html">Register</a>
+
+<a href="login.html">Login</a>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="events.html">Events</a>
+
+<a href="profile.html">Profile</a>
+
+<a href="contact.html">Contact</a>
+
+<a href="admin.html">Admin</a>
+
+<a href="faq.html">FAQ</a>
+
+<a href="feedback.html">Feedback</a>
+
+</div>
+
+</nav>
+
+<div class="container">
+
+<div class="card">
+
+<h2>
+
+Student Records
+
+</h2>
+
+<table>
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Course</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+<tr>
+
+<td>101</td>
+
+<td>Sapan Desai</td>
+
+<td>BCA</td>
+
+<td>Active</td>
+
+<td>
+
+<button onclick="openModal('Viewing Student Record')">
+
+View
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>102</td>
+
+<td>Pratham Patel</td>
+
+<td>B.Tech</td>
+
+<td>Active</td>
+
+<td>
+
+<button onclick="openModal('Viewing Student Record')">
+
+View
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>103</td>
+
+<td>Om Patel</td>
+
+<td>MCA</td>
+
+<td>Inactive</td>
+
+<td>
+
+<button onclick="openModal('Viewing Student Record')">
+
+View
+
+</button>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>
+
+Quick Actions
+
+</h2>
+
+<button onclick="openModal('New Student Added Successfully!')">
+
+Add Student
+
+</button>
+
+<button onclick="openModal('Student Record Updated Successfully!')">
+
+Update Student
+
+</button>
+
+<button onclick="openModal('Student Deleted Successfully!')">
+
+Delete Student
+
+</button>
+
+<button onclick="openModal('Report Generated Successfully!')">
+
+Generate Report
+
+</button>
+
+</div>
+</div>
+
+<div class="modal" id="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeModal()">
+
+&times;
+
+</span>
+
+<h2>
+
+Admin Action
+
+</h2>
+
+<p id="modalText">
+
+Action Completed Successfully.
+
+</p>
+
+<button onclick="closeModal()">
+
+Close
+
+</button>
+
+</div>
+
+</div>
+
+<button class="theme-btn" id="themeBtn">
+
+🌙
+
+</button>
+
+<button
+id="topBtn"
+onclick="scrollTopPage()"
+style="
+display:none;
+position:fixed;
+right:90px;
+bottom:20px;
+width:55px;
+height:55px;
+border-radius:50%;
+background:#005bea;
+color:white;
+font-size:22px;
+border:none;
+cursor:pointer;
+">
+
+⬆
+
+</button>
+
+<footer>
+
+© 2026 Student Hub Portal | All Rights Reserved
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

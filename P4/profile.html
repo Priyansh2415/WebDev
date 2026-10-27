@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Hub Portal - Profile</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ==========================
+Notification Banner
+========================== -->
+
+<div class="notification" id="notification">
+
+<div>
+
+👋 Welcome Back! Your profile is up to date.
+
+</div>
+
+<button onclick="closeBanner()">
+
+X
+
+</button>
+
+</div>
+
+<!-- ==========================
+Header
+========================== -->
+
+<header>
+
+<h1>
+
+👤 Student Profile
+
+</h1>
+
+<p>
+
+Manage Your Personal Information
+
+</p>
+
+</header>
+
+<!-- ==========================
+Navigation
+========================== -->
+
+<nav>
+
+<div class="menu-btn" onclick="toggleMenu()">
+
+☰
+
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="register.html">Register</a>
+
+<a href="login.html">Login</a>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="events.html">Events</a>
+
+<a href="profile.html">Profile</a>
+
+<a href="contact.html">Contact</a>
+
+<a href="admin.html">Admin</a>
+
+<a href="faq.html">FAQ</a>
+
+<a href="feedback.html">Feedback</a>
+
+</div>
+
+</nav>
+
+<!-- ==========================
+Container
+========================== -->
+
+<div class="container">
+
+<!-- ==========================
+Profile Card
+========================== -->
+
+<div class="card" style="text-align:center;">
+
+<img src="https://i.pravatar.cc/180?img=12"
+style="width:180px;
+height:180px;
+border-radius:50%;
+border:5px solid #005bea;">
+
+<h2 style="margin-top:20px;">
+
+Priyansh Shah
+
+</h2>
+
+<p>
+
+Bachelor of Technology Student
+
+</p>
+
+<br>
+
+<button onclick="openModal('Edit Profile Feature Activated')">
+
+✏ Edit Profile
+
+</button>
+
+</div>
+
+<!-- ==========================
+Personal Information
+========================== -->
+
+<div class="card">
+
+<h2>
+
+📋 Personal Information
+
+</h2>
+
+<table>
+
+<tr>
+
+<th>Name</th>
+
+<td>Priyansh Shahtd>
+
+</tr>
+
+<tr>
+
+<th>Student ID</th>
+
+<td>25CS101</td>
+
+</tr>
+
+<tr>
+
+<th>Email</th>
+
+<td>student@example.com</td>
+
+</tr>
+
+<tr>
+
+<th>Phone</th>
+
+<td>+91 9876543210</td>
+
+</tr>
+
+<tr>
+
+<th>City</th>
+
+<td>Vadodara</td>
+
+</tr>
+
+<tr>
+
+<th>Date of Birth</th>
+
+<td>24 June 2007</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<!-- ==========================
+Academic Details
+========================== -->
+
+<div class="card">
+
+<h2>
+
+🎓 Academic Details
+
+</h2>
+
+<table>
+
+<tr>
+
+<th>Course</th>
+
+<td>Bachelor of Technology</td>
+
+</tr>
+
+<tr>
+
+<th>Branch</th>
+
+<td>Computer Science Engineering</td>
+
+</tr>
+
+<tr>
+
+<th>Semester</th>
+
+<td>3</td>
+
+</tr>
+
+<tr>
+
+<th>CGPA</th>
+
+<td>8.50</td>
+
+</tr>
+
+<tr>
+
+<th>Attendance</th>
+
+<td>92%</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<!-- ==========================
+Skills
+========================== -->
+
+<div class="card">
+
+<h2>
+
+💻 Technical Skills
+
+</h2>
+
+<div style="display:flex;
+flex-wrap:wrap;
+gap:12px;">
+
+<button>HTML</button>
+
+<button>CSS</button>
+
+<button>JavaScript</button>
+
+<button>React</button>
+
+<button>Java</button>
+
+<button>Python</button>
+
+<button>MySQL</button>
+
+<button>Flutter</button>
+
+<button>Git</button>
+
+<button>Bootstrap</button>
+
+</div>
+
+</div>
+<!-- ==========================
+End Container
+========================== -->
+
+</div>
+
+<!-- ==========================
+Modal Popup
+========================== -->
+
+<div class="modal" id="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">
+
+            &times;
+
+        </span>
+
+        <h2>
+
+            👤 Edit Profile
+
+        </h2>
+
+        <p id="modalText">
+
+            Your profile can now be updated successfully.
+
+        </p>
+
+        <br>
+
+        <button onclick="closeModal()">
+
+            Close
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+Theme Switch Button
+========================== -->
+
+<button
+class="theme-btn"
+id="themeBtn">
+
+🌙
+
+</button>
+
+<!-- ==========================
+Scroll To Top Button
+========================== -->
+
+<button
+id="topBtn"
+onclick="scrollTopPage()"
+style="
+display:none;
+position:fixed;
+right:90px;
+bottom:20px;
+width:55px;
+height:55px;
+border-radius:50%;
+background:#005bea;
+color:white;
+font-size:22px;
+border:none;
+cursor:pointer;
+z-index:999;
+">
+
+⬆
+
+</button>
+
+<!-- ==========================
+Footer
+========================== -->
+
+<footer>
+
+<p>
+
+© 2026 Student Hub Portal | All Rights Reserved
+
+</p>
+
+</footer>
+
+<!-- ==========================
+JavaScript
+========================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

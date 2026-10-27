@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Student Hub Portal - Register</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ==========================
+Notification Banner
+========================== -->
+
+<div class="notification" id="notification">
+
+<div>
+
+🎉 New Student Admissions are Open!
+
+</div>
+
+<button onclick="closeBanner()">
+
+X
+
+</button>
+
+</div>
+
+<!-- ==========================
+Header
+========================== -->
+
+<header>
+
+<h1>
+
+📝 Student Registration
+
+</h1>
+
+<p>
+
+Create your Student Hub Portal Account
+
+</p>
+
+</header>
+
+<!-- ==========================
+Navigation
+========================== -->
+
+<nav>
+
+<div
+class="menu-btn"
+onclick="toggleMenu()">
+
+☰
+
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">
+
+Home
+
+</a>
+
+<a href="about.html">
+
+About
+
+</a>
+
+<a href="register.html">
+
+Register
+
+</a>
+
+<a href="login.html">
+
+Login
+
+</a>
+
+<a href="dashboard.html">
+
+Dashboard
+
+</a>
+
+<a href="events.html">
+
+Events
+
+</a>
+
+<a href="profile.html">
+
+Profile
+
+</a>
+
+<a href="contact.html">
+
+Contact
+
+</a>
+
+<a href="admin.html">
+
+Admin
+
+</a>
+
+<a href="faq.html">
+
+FAQ
+
+</a>
+
+<a href="feedback.html">
+
+Feedback
+
+</a>
+
+</div>
+
+</nav>
+
+<!-- ==========================
+Container
+========================== -->
+
+<div class="container">
+
+<div class="card">
+
+<h2>
+
+Student Registration Form
+
+</h2>
+
+<form id="registerForm">
+
+<input
+type="text"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+placeholder="Email Address"
+required>
+
+<input
+type="text"
+placeholder="Student ID"
+required>
+
+<select required>
+
+<option value="">
+
+Select Course
+
+</option>
+
+<option>
+
+BCA
+
+</option>
+
+<option>
+
+BBA
+
+</option>
+
+<option>
+
+B.Tech
+
+</option>
+
+<option>
+
+MCA
+
+</option>
+
+<option>
+
+MBA
+
+</option>
+
+</select>
+
+<input
+type="tel"
+placeholder="Mobile Number"
+required>
+
+<input
+type="password"
+placeholder="Create Password"
+required>
+
+<input
+type="password"
+placeholder="Confirm Password"
+required>
+
+<button
+type="submit">
+
+Register Now
+
+</button>
+
+</form>
+
+<br>
+
+<p>
+
+Already have an account?
+
+<a href="login.html">
+
+Login Here
+
+</a>
+
+</p>
+
+</div>
+<!-- ==========================
+Modal Popup
+========================== -->
+
+</div>
+
+<div class="modal" id="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">
+            &times;
+        </span>
+
+        <h2>
+            🎉 Registration Successful
+        </h2>
+
+        <p id="modalText">
+            Your Student Hub Portal account has been created successfully.
+        </p>
+
+        <br>
+
+        <button onclick="closeModal()">
+            Close
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+Theme Switch Button
+========================== -->
+
+<button
+class="theme-btn"
+id="themeBtn">
+
+🌙
+
+</button>
+
+<!-- ==========================
+Scroll To Top Button
+========================== -->
+
+<button
+id="topBtn"
+onclick="scrollTopPage()"
+style="
+display:none;
+position:fixed;
+right:90px;
+bottom:20px;
+width:55px;
+height:55px;
+border-radius:50%;
+background:#005bea;
+color:white;
+font-size:22px;
+border:none;
+cursor:pointer;
+z-index:999;
+">
+
+⬆
+
+</button>
+
+<!-- ==========================
+Footer
+========================== -->
+
+<footer>
+
+<p>
+
+© 2026 Student Hub Portal | All Rights Reserved
+
+</p>
+
+</footer>
+
+<!-- ==========================
+JavaScript
+========================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

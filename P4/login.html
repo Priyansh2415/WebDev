@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Student Hub Portal - Login</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ==========================
+Notification Banner
+========================== -->
+
+<div class="notification" id="notification">
+
+<div>
+
+🔔 Welcome Back! Login to access your Student Dashboard.
+
+</div>
+
+<button onclick="closeBanner()">
+
+X
+
+</button>
+
+</div>
+
+<!-- ==========================
+Header
+========================== -->
+
+<header>
+
+<h1>
+
+🔐 Student Login
+
+</h1>
+
+<p>
+
+Access Your Student Hub Portal Account
+
+</p>
+
+</header>
+
+<!-- ==========================
+Navigation
+========================== -->
+
+<nav>
+
+<div class="menu-btn"
+onclick="toggleMenu()">
+
+☰
+
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="register.html">Register</a>
+
+<a href="login.html">Login</a>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="events.html">Events</a>
+
+<a href="profile.html">Profile</a>
+
+<a href="contact.html">Contact</a>
+
+<a href="admin.html">Admin</a>
+
+<a href="faq.html">FAQ</a>
+
+<a href="feedback.html">Feedback</a>
+
+</div>
+
+</nav>
+
+<!-- ==========================
+Container
+========================== -->
+
+<div class="container">
+
+<div class="card">
+
+<h2>
+
+Student Login
+
+</h2>
+
+<form id="loginForm">
+
+<input
+type="text"
+placeholder="Enter Student ID"
+required>
+
+<input
+type="password"
+placeholder="Enter Password"
+required>
+
+<button
+type="submit">
+
+Login
+
+</button>
+
+</form>
+
+<br>
+
+<p>
+
+Forgot Password?
+
+<a href="#"
+onclick="openModal('A password reset link has been sent to your registered email.')">
+
+Click Here
+
+</a>
+
+</p>
+
+<br>
+
+<p>
+
+Don't have an account?
+
+<a href="register.html">
+
+Register Now
+
+</a>
+
+</p>
+
+<br>
+
+<button
+onclick="openModal('Welcome! Login successful.')">
+
+Demo Login
+
+</button>
+
+</div>
+<!-- ==========================
+Modal Popup
+========================== -->
+
+</div>
+
+<div class="modal" id="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">
+
+            &times;
+
+        </span>
+
+        <h2>
+
+            🎉 Login Successful
+
+        </h2>
+
+        <p id="modalText">
+
+            Welcome to Student Hub Portal.
+
+        </p>
+
+        <br>
+
+        <button onclick="closeModal()">
+
+            Close
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+Theme Switch Button
+========================== -->
+
+<button
+class="theme-btn"
+id="themeBtn">
+
+🌙
+
+</button>
+
+<!-- ==========================
+Scroll To Top Button
+========================== -->
+
+<button
+id="topBtn"
+onclick="scrollTopPage()"
+style="
+display:none;
+position:fixed;
+right:90px;
+bottom:20px;
+width:55px;
+height:55px;
+border-radius:50%;
+background:#005bea;
+color:white;
+font-size:22px;
+border:none;
+cursor:pointer;
+z-index:999;
+">
+
+⬆
+
+</button>
+
+<!-- ==========================
+Footer
+========================== -->
+
+<footer>
+
+<p>
+
+© 2026 Student Hub Portal | All Rights Reserved
+
+</p>
+
+</footer>
+
+<!-- ==========================
+JavaScript
+========================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

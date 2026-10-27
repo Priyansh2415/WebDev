@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Hub Portal - FAQ</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Notification Banner -->
+
+<div class="notification" id="notification">
+
+<div>
+
+❓ Frequently Asked Questions - Find your answers here.
+
+</div>
+
+<button onclick="closeBanner()">X</button>
+
+</div>
+
+<!-- Header -->
+
+<header>
+
+<h1>❓ Frequently Asked Questions</h1>
+
+<p>Student Hub Portal Help Center</p>
+
+</header>
+
+<!-- Navigation -->
+
+<nav>
+
+<div class="menu-btn" onclick="toggleMenu()">
+
+☰
+
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="register.html">Register</a>
+
+<a href="login.html">Login</a>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="events.html">Events</a>
+
+<a href="profile.html">Profile</a>
+
+<a href="contact.html">Contact</a>
+
+<a href="admin.html">Admin</a>
+
+<a href="faq.html">FAQ</a>
+
+<a href="feedback.html">Feedback</a>
+
+</div>
+
+</nav>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq">
+
+<div class="faq-question">
+
+How do I register?
+
+</div>
+
+<div class="faq-answer">
+
+Visit the Register page, complete the registration form, and submit your details.
+
+</div>
+
+</div>
+
+<div class="faq">
+
+<div class="faq-question">
+
+How do I login?
+
+</div>
+
+<div class="faq-answer">
+
+Use your Student ID and Password on the Login page.
+
+</div>
+
+</div>
+
+<div class="faq">
+
+<div class="faq-question">
+
+Can I update my profile?
+
+</div>
+
+<div class="faq-answer">
+
+Yes. Open the Profile page and click the Edit Profile button.
+
+</div>
+
+</div>
+
+<div class="faq">
+
+<div class="faq-question">
+
+How do I register for events?
+
+</div>
+
+<div class="faq-answer">
+
+Open the Events page and click the Register button for your preferred event.
+
+</div>
+
+</div>
+
+<div class="faq">
+
+<div class="faq-question">
+
+How can I contact support?
+
+</div>
+
+<div class="faq-answer">
+
+Visit the Contact page and submit your message.
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- Modal -->
+
+<div class="modal" id="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeModal()">&times;</span>
+
+<h2>FAQ</h2>
+
+<p id="modalText">
+
+Thank you for using Student Hub Portal.
+
+</p>
+
+<button onclick="closeModal()">
+
+Close
+
+</button>
+
+</div>
+
+</div>
+
+<button class="theme-btn" id="themeBtn">
+
+🌙
+
+</button>
+
+<button
+id="topBtn"
+onclick="scrollTopPage()"
+style="
+display:none;
+position:fixed;
+right:90px;
+bottom:20px;
+width:55px;
+height:55px;
+border-radius:50%;
+background:#005bea;
+color:white;
+font-size:22px;
+border:none;
+cursor:pointer;
+">
+
+⬆
+
+</button>
+
+<footer>
+
+© 2026 Student Hub Portal | All Rights Reserved
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
