@@ -1,0 +1,191 @@
+:root {
+--primary-color: #003366;
+--secondary-color: #008080;
+--background-color: #f4f6f9;
+--text-color: #333333;
+--white: #ffffff;
+--danger-bg: #f8d7da;
+ 
+--danger-color: #721c24;
+--success-bg: #d4edda;
+--success-color: #155724;
+}
+
+* {
+box-sizing: border-box; margin: 0;
+padding: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+background-color: var(--background-color); color: var(--text-color);
+display: flex;
+flex-direction: column; min-height: 100vh;
+}
+
+header {
+background-color: var(--white); padding: 16px;
+text-align: center;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+max-height: 80px; max-width: 100%; width: auto;
+}
+
+header h1 {
+color: var(--primary-color); margin-top: 5px;
+font-size: 1.6rem;
+}
+
+nav {
+display: flex;
+flex-wrap: wrap;
+justify-content: center; gap: 10px;
+background-color: var(--secondary-color);
+ 
+padding: 10px 20px;
+}
+
+nav a {
+color: var(--white); text-decoration: none; padding: 7px 12px; border-radius: 4px; font-weight: 500;
+transition: background 0.3s;
+}
+
+nav a:hover, nav a.active {
+background-color: var(--primary-color);
+}
+
+main {
+flex: 1;
+max-width: 900px; width: 92%;
+margin: 25px auto;
+padding: 30px;
+background-color: var(--white); border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+main h2 {
+color: var(--primary-color); margin-bottom: 20px;
+border-bottom: 2px solid var(--secondary-color);
+padding-bottom: 8px;
+}
+
+.alert {
+padding: 12px 16px; border-radius: 4px; margin-bottom: 20px; font-size: 0.95rem;
+}
+
+.alert-danger {
+background-color: var(--danger-bg); color: var(--danger-color);
+ 
+border: 1px solid #f5c6cb;
+}
+
+.alert-danger ul {
+margin: 10px 0 0 20px;
+}
+
+.alert-success {
+background-color: var(--success-bg); color: var(--success-color);
+border: 1px solid #c3e6cb;
+}
+
+.form-group {
+margin-bottom: 18px;
+}
+
+.form-group label { display: block;
+margin-bottom: 6px; font-weight: 600;
+color: #444444;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea { display: block;
+width: 100%;
+padding: 10px;
+border: 1px solid #cccccc; border-radius: 4px;
+font-size: 0.95rem;
+background-color: var(--white);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { outline: none;
+border-color: var(--secondary-color);
+box-shadow: 0 0 4px rgba(0, 128, 128, 0.2);
+}
+
+.form-group textarea {
+ 
+resize: vertical;
+}
+
+.btn {
+background-color: var(--secondary-color); color: var(--white);
+padding: 12px 24px; border: none; border-radius: 4px; cursor: pointer;
+font-size: 1rem; font-weight: 600;
+transition: background 0.3s;
+}
+
+.btn:hover {
+background-color: var(--primary-color);
+}
+
+.table-heading { margin-top: 40px;
+}
+
+.table-container { width: 100%; overflow-x: auto;
+}
+
+table {
+width: 100%;
+border-collapse: collapse; margin-top: 20px;
+font-size: 0.9rem;
+}
+
+th,
+td {
+border: 1px solid #dddddd; padding: 10px 12px;
+text-align: left;
+overflow-wrap: anywhere;
+}
+
+th {
+background-color: var(--primary-color);
+ 
+color: var(--white);
+}
+
+tr:nth-child(even) {
+background-color: #f9fbfd;
+}
+
+footer {
+background-color: var(--primary-color); color: var(--white);
+text-align: center;
+padding: 15px; margin-top: auto; font-size: 0.9rem;
+}
+
+@media (max-width: 600px) { header h1 {
+font-size: 1.3rem;
+}
+
+nav {
+gap: 5px;
+padding: 10px;
+}
+
+nav a {
+padding: 7px 9px; font-size: 0.9rem;
+}
+
+main {
+width: 95%;
+padding: 18px; margin: 15px auto;
+}
+
+.btn {
+width: 100%;
+}
+}
